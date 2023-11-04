@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Django server",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Pytest",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args" : ["-s",
+            "."],
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Pytest playwright",
+            "type": "python",
+            "request": "launch",
+            // "program": "${workspaceFolder}/manage.py",
+            "module": "pytest",
+            "args": [
+                "apps/students/tests/e2e/test_user_actions.py",
+                "-vs",
+                "-k logout",
+                "--headed",
+                "--slowmo=500",
+
+            ],
+            "django": true,
+            // "justMyCode": false --> not working, giving error: Parameters to Generic[...] must all be type variables
+        },
+    ]
+}

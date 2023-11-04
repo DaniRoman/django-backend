@@ -1,8 +1,10 @@
 
-# Create your tests here.
+from playwright.sync_api import Page, expect
 
-class TestCoreClass():
 
-    def test_prueba(self):
-        a = 2
-        assert a != 2
+def test_prueba(page: Page):
+    page.goto("https://playwright.dev/")
+    # Expect a title "to contain" a substring.
+    expect(page).to_have_title("Fast and reliable end-to-end testing for modern web apps | Playwright")
+
+    
