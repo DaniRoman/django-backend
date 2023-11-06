@@ -1,7 +1,7 @@
 from django.urls import resolve
 from django.test import Client
 from playwright.sync_api import Page, expect
-from core import views
+from apps.core import views
 
 import django
 django.setup()
