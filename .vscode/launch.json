@@ -31,15 +31,15 @@
             // "program": "${workspaceFolder}/manage.py",
             "module": "pytest",
             "args": [
-                "apps/students/tests/e2e/test_user_actions.py",
+                "core/tests/test_core.py",
                 "-vs",
-                "-k logout",
+                // "-k logout",
                 "--headed",
                 "--slowmo=500",
 
             ],
             "django": true,
-            // "justMyCode": false --> not working, giving error: Parameters to Generic[...] must all be type variables
+            "justMyCode": false 
         },
     ]
 }
