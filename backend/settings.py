@@ -28,7 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
-PROJECT_APPS = ['apps.core',]
+PROJECT_APPS = [
+    'apps.core',
+    'apps.store',
+    ]
 # Application definition
 DJANGO_APPS = ['django.contrib.admin',
     'django.contrib.auth',
