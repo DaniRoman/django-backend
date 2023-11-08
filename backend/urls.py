@@ -21,5 +21,6 @@ from apps.core.views import homeSI
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('apps.store.urls')),
-    path('api/core/', homeSI, name='core')
+    path('api/core/', homeSI, name='core'),
+    path('api/list/', include('apps.list.urls')),
 ]

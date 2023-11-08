@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 PROJECT_APPS = [
     'apps.core',
     'apps.store',
+    'apps.list',
     ]
 # Application definition
 DJANGO_APPS = ['django.contrib.admin',

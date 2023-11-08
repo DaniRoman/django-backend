@@ -33,7 +33,7 @@
             // "program": "${workspaceFolder}/manage.py",
             "module": "pytest",
             "args": [
-                "core/tests/test_core.py",
+                "apps/list/tests/functional_tests/test_list_main_site.py",
                 "-vs",
                 // "-k logout",
                 "--headed",

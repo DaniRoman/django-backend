@@ -9,7 +9,7 @@ ENV PYTHONUNBUFFERED 1
 EXPOSE 8000
 
 RUN apt-get update && \
-    apt-get install -y python3 python3-venv && \
+    apt-get install -y python3 python3-venv iputils-ping -y curl && \
     python3 -m venv /py && \
     /py/bin/pip install --upgrade pip && \
     # apk add --update --no-cache --virtual .tmp-build-deps \
