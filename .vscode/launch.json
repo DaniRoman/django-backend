@@ -20,7 +20,7 @@
             "type": "python",
             "request": "launch",
             "module": "pytest",
-            "args" : ["apps/store/tests/unit_tests/test_store.py",
+            "args" : ["apps/list/tests/unit_tests/test_list.py",
             "-s",
             "."
             ],
