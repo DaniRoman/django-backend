@@ -19,3 +19,6 @@ def test_saving_and_retrieving_items():
     exp = 2
 
     assert result == exp
+    
+    first_item.delete()
+    second_item.delete()
